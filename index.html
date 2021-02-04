@@ -4,23 +4,31 @@
     <title>Momontum</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="index.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Hanalei&family=Roboto+Slab:wght@400;900&display=swap" rel="stylesheet">
   </head>
 
   <body>
+
     <div class="js-clock">
       <h1>00:00</h1>
-    </div>
-    <form class="js-form form">
-      <input type="text" placeholder="What is your name?"/>
-    </form>
-    <h4 class="js-greeting greeting"></h4>
-    <form class="js-toDoForm">
-      <input type="text" placeholder="Write a todo"/>
-    </form>
-    <ul class="js-toDoList">
+      <form class="js-form form">
+        <input type="text" placeholder="What is your name?"/>
+      </form>
+      <h4 class="js-greeting greeting"></h4>
 
-    </ul>
+    </div>
+
+    <div class="todoContainer">
+      <form class="js-toDoForm">
+        <input class ="todoText" type="text" placeholder="Write a todo"/>
+      </form>
+      <div class="subContainer">
+        <ul class="js-toDoList"></ul>
+      </div>
+    </div>
     <span class="js-weather"></span>
+
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
     <script src="todo.js"></script>

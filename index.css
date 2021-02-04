@@ -1,15 +1,74 @@
+html{
+  height: 100%;
+}
 body{
   background-color: #3f4c61;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
+.js-clock{
+  position: relative;
+  width: 100%;
+  height: 300px;
+  top: 40%;
+}
+h1{
+  font-family: 'Hanalei', cursive;
+  width: 100%;
+  text-align: center;
+}
+h4{
+  width: 100%;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+}
+.js-form, .form{
+  width: 100%;
+  text-align: center;
+}
+
+.todoContainer{
+  font-family: 'Roboto Slab', serif;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  top: 20%;
+}
+.subContainer{
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translate(-70%, 0%);
+}
+.todoText{
+  position: absolute;
+  left: 50%;
+  top: 7%;
+  transform: translate(-50%, -50%);
+}
+
 
 .form,
 .greeting{
+  left: 50%;
   display: none;
   color: white;
 }
 h1,ul,span{
   color: white;
 }
+ul{
+  list-style: none;
+}
+.js-weather{
+  position: fixed;
+  right: 30px;
+  top: 20px;
+  font-size: 20px;
+}
+
 .showing{
   display: block;
 }
